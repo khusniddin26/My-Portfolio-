@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="about">
+        <h1>About Developer</h1>
+        <div class="main">
+            <h3>-Hi👋.My name is Khusniddin
+            <br>
+            -I'm Full Stack Developer🙂
+            <br>
+            -And I'm a student🧑‍🎓
+            <br>
+            -My country is in Central Asia🌐
+            <br>
+            -I love to code and programming💻
+<br> 
+-Now i'm junior Full-Stack developer
+<br> 
+-After some time knowledge will go up</h3>
+<h4>...</h4>
+        </div>
+        
+        <h2>YouTube</h2>
+        <h5>In YouTube you can see my coding projects and lesson where you will get more information about how to code and how to design your future projects and websites</h5>
+        
+        
+        <div class="wrapper">
+      <div class="container">
+        <div class="circular-progress">
+          <div class="value-container"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let progressBar = document.querySelector(".circular-progress");
+      let valueContainer = document.querySelector(".value-container");
+      // Progress Start Value
+      let progressValue = 0;
+      // Progress End Value
+      let progressEndValue = 100;
+      // Progress Duration
+      // Greater duration = lesser speed
+      let duration = 50;
+
+      let progress = setInterval(() => {
+        progressValue++;
+        valueContainer.textContent = `${progressValue}%`;
+        progressBar.style.background = `conic-gradient(
+    #26D0CE ${progressValue * 3.6}deg,
+    rgba(0,0,0,0.1) ${progressValue * 3.6}deg
+  )`;
+        if (progressValue == progressEndValue) {
+          clearInterval(progress);
+        }
+      }, duration);
+      progress;
+    </script>
+    
+    <h6>Your coding activation</h6>
+    <p>Always on display!</p>
+    <div class="bute">
+    <a href="#">Learn more</a>
+    </div>
+    <h3>© Khusniddin Madaminjanov 2022</h3>
+    </section>
